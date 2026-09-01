@@ -1,0 +1,12 @@
+{
+  "name": "@candidate-portal/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./schemas/auth": "./schemas/auth.js",
+    "./schemas/profile": "./schemas/profile.js",
+    "./schemas/offer": "./schemas/offer.js",
+    "./schemas/settings": "./schemas/settings.js"
+  }
+}
