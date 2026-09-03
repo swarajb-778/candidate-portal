@@ -1,0 +1,25 @@
+@import '@fontsource-variable/geist';
+@import '@fontsource/geist-mono';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-surface-page font-sans text-ink antialiased; }
+  a    { @apply text-accent hover:text-accent-hover; }
+  ::selection { background: rgba(58, 111, 247, .18); }
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* The design has four durations and one spinner. Reduced motion drops all of
+   them to 0ms rather than leaving a slower version running. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+}
