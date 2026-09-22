@@ -7,24 +7,6 @@ they can review and sign, and a profile that carries across every application.
 
 Sixteen routes, nine modals, fully responsive.
 
-## Stack
-
-| Layer | Choice |
-| --- | --- |
-| Client | React 18, Vite |
-| Routing | `react-router` v7 |
-| Styling | Tailwind CSS 3.4 with a tokenised theme |
-| Server state | TanStack Query v5 |
-| Client state | Redux Toolkit |
-| HTTP | Axios (`withCredentials: true`) |
-| Forms | React Hook Form + zod |
-| Icons | `lucide-react` |
-| API | Express on Node |
-| DB | MongoDB Atlas via Mongoose |
-
-Shared zod schemas live in `shared/` and are imported by both the client and the
-server, so the same validation runs on both sides.
-
 ## Layout
 
 ```
@@ -61,10 +43,3 @@ Three seeded accounts, all with the password `portal1234`:
 | `swaraj@example.com` | The full corpus — 3 applications, a panel day, 3 threads, 4 documents, a pending offer |
 | `asha@example.com` | A brand-new account — every empty state and the 0% profile-strength bar |
 | `miguel@example.com` | 5 applications across all statuses, an already-accepted offer |
-
-## Design
-
-`design_handoff_candidate_portal/` holds the spec this app implements: design
-tokens, every screen and modal, the API contract, the data models, and reference
-screenshots. `client/tailwind.config.js` is the token source of truth — component
-styles reference token names rather than raw values.
