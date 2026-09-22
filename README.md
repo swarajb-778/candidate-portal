@@ -1,4 +1,4 @@
-# Candidate Portal
+# Candidate Sync Platform
 
 A candidate-facing hiring portal. An applicant signs in and sees everywhere their
 applications stand: status and timeline per application, scheduled interviews with
